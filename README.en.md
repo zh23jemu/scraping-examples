@@ -1,7 +1,7 @@
 # scraping-examples
 
 #### Description
-Python爬虫案例
+Python scraping examples
 
 #### Software Architecture
 Software architecture description
