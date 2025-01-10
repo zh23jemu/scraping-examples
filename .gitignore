@@ -13,3 +13,6 @@
 # Output files
 *.csv
 
+# Download files
+*/downloads/*
+
