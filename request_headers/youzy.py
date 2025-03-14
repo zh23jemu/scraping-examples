@@ -1,3 +1,6 @@
+# https://www.youzy.cn/tzy/search/colleges/collegeList
+# u-sign
+
 from hashlib import md5
 
 import requests

@@ -64,12 +64,12 @@ eT = function (eo) {
 
 data = '{"appId":"34385","params":"{\\"device\\":\\"HMA-AL00\\",\\"isBeta\\":\\"false\\",\\"grayHair\\":\\"false\\",\\"from\\":\\"nt_history\\",\\"brand\\":\\"HUAWEI\\",\\"info\\":\\"wifi\\",\\"index\\":\\"4\\",\\"rainbow\\":\\"\\",\\"schemaType\\":\\"auction\\",\\"elderHome\\":\\"false\\",\\"isEnterSrpSearch\\":\\"true\\",\\"newSearch\\":\\"false\\",\\"network\\":\\"wifi\\",\\"subtype\\":\\"\\",\\"hasPreposeFilter\\":\\"false\\",\\"prepositionVersion\\":\\"v2\\",\\"client_os\\":\\"Android\\",\\"gpsEnabled\\":\\"false\\",\\"searchDoorFrom\\":\\"srp\\",\\"debug_rerankNewOpenCard\\":\\"false\\",\\"homePageVersion\\":\\"v7\\",\\"searchElderHomeOpen\\":\\"false\\",\\"search_action\\":\\"initiative\\",\\"sugg\\":\\"_4_1\\",\\"sversion\\":\\"13.6\\",\\"style\\":\\"list\\",\\"ttid\\":\\"600000@taobao_pc_10.7.0\\",\\"needTabs\\":\\"true\\",\\"areaCode\\":\\"CN\\",\\"vm\\":\\"nw\\",\\"countryNum\\":\\"156\\",\\"m\\":\\"pc\\",\\"page\\":1,\\"n\\":48,\\"q\\":\\"%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1\\",\\"qSource\\":\\"url\\",\\"pageSource\\":\\"a21bo.jianhua/a.201856.d13\\",\\"tab\\":\\"all\\",\\"pageSize\\":48,\\"totalPage\\":100,\\"totalResults\\":4800,\\"sourceS\\":\\"0\\",\\"sort\\":\\"_coefp\\",\\"bcoffset\\":\\"\\",\\"ntoffset\\":\\"\\",\\"filterTag\\":\\"\\",\\"service\\":\\"\\",\\"prop\\":\\"\\",\\"loc\\":\\"\\",\\"start_price\\":null,\\"end_price\\":null,\\"startPrice\\":null,\\"endPrice\\":null,\\"itemIds\\":null,\\"p4pIds\\":null,\\"p4pS\\":null,\\"categoryp\\":\\"\\",\\"ha3Kvpairs\\":null,\\"myCNA\\":\\"PbabH1o0HjsCAXBRDezmK1tA\\"}"}'
 
-function getParams(data) {
+function getParams(data, tk) {
     params = {}
     params['t'] = (new Date).getTime()
 
-    // 第一个值是cookie中_m_h5_tk的前半部分, 会随着时间变化
-    params['sign'] = eT("84e0a209e1907d03d9fc49b2fed58df4" + "&" + params['t'] + "&" + "12574478" + "&" + data)
+    // tk是cookie中_m_h5_tk的前半部分, 会随着时间变化
+    params['sign'] = eT(tk + "&" + params['t'] + "&" + "12574478" + "&" + data)
 
     return params
 

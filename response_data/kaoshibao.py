@@ -64,6 +64,5 @@ response = requests.post('https://www.kaoshibao.com/api/questions/lists', cookie
 # Note: json_data will not be serialized by requests
 # exactly as it was in the original request.
 # data = '{"paperid":"16882563","type":"all","size":10,"page":1}'
-# response = requests.post('https://www.kaoshibao.com/api/questions/lists', cookies=cookies, headers=headers, data=data)
 
 print(response.json())
