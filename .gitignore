@@ -16,3 +16,5 @@
 # Download files
 */downloads/*
 
+# NodeJS modules
+/node_modules/*
