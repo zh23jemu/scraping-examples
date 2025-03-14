@@ -1,3 +1,10 @@
+// 网址: https://data.10jqka.com.cn/market/zdfph/
+// API地址(翻页): https://data.10jqka.com.cn/market/zdfph/field/zdf/order/desc/ajax/1/free/1/page/1/free/1/
+// 需要逆向的是请求头中的hexin-v
+
+// 【爬虫JS逆向实战(补环境篇)-同花顺股票数据采集^Cookie保护机制与数据编码方法】https://www.bilibili.com/video/BV1J3AWeeEYt?vd_source=8ef72f20a1d63d974aa6968d40c1422e
+// 我的网盘/Python/爬虫和JS逆向教程/js逆向-同花顺cookie解密.mp4
+
 function getEnv(proxy_array) {
     for (let i = 0; i < proxy_array.length; i++) {
         handler = `{
@@ -42,7 +49,7 @@ document = {
     },
     createElement: function (arg) {
         console.log('对象：document-----方法:createElement-----参数:', arg)
-        if(arg === 'div'){
+        if (arg === 'div') {
             return div;
         }
     },
@@ -56,27 +63,27 @@ document = {
 
 navigator = {
     plugins: {
-    "0": {
-        "0": {},
-        "1": {}
+        "0": {
+            "0": {},
+            "1": {}
+        },
+        "1": {
+            "0": {},
+            "1": {}
+        },
+        "2": {
+            "0": {},
+            "1": {}
+        },
+        "3": {
+            "0": {},
+            "1": {}
+        },
+        "4": {
+            "0": {},
+            "1": {}
+        }
     },
-    "1": {
-        "0": {},
-        "1": {}
-    },
-    "2": {
-        "0": {},
-        "1": {}
-    },
-    "3": {
-        "0": {},
-        "1": {}
-    },
-    "4": {
-        "0": {},
-        "1": {}
-    }
-},
     userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0"
 }
 
