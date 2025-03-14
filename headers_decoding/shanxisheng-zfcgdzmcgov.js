@@ -1,5 +1,5 @@
 // 网址: https://shanxisheng-zfcgdzmcgov.cn/gpmall-main-web/basic/sxNotice
-// 接口地址(翻页): https://shanxisheng-zfcgdzmcgov.cn/gpfa-bpoc/api/notice/kc/v1/ignore/pagingKcAgreementNotice
+// API(翻页): https://shanxisheng-zfcgdzmcgov.cn/gpfa-bpoc/api/notice/kc/v1/ignore/pagingKcAgreementNotice
 // 需要逆向的是请求头中的nsssjss参数
 
 // 【webpack实战】https://www.bilibili.com/video/BV13M99Y1EEj?vd_source=8ef72f20a1d63d974aa6968d40c1422e
