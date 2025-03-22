@@ -12,9 +12,17 @@
 
 # Output files
 *.csv
+*.mp4
+*.ts
+*.zip
+
 
 # Download files
 */downloads/*
 
 # NodeJS modules
 /node_modules/*
+
+# Temp files
+*tmp*
+*temp*
